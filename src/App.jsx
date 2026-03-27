@@ -8,8 +8,8 @@ import './App.css'
 // 현재위치 버튼을 누르면 다시 현재위치 기반의 날씨가 나온다   
 // 데이터를 들고오는 동안 로딩 스피너가 돈다                
 
-// api key = b70eade5a7e3677029b379a24924df97
-const API_KEY = 'b70eade5a7e3677029b379a24924df97'
+// api key = d2472977222e45c1eab40e21d94933c9
+const API_KEY = 'd2472977222e45c1eab40e21d94933c9'
 const cities = ['Seoul', 'Tokyo', 'New York', 'London']
 
 function App() {
