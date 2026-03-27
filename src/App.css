@@ -1,0 +1,75 @@
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+h1 {
+  margin-bottom: 24px;
+}
+
+.weather-card {
+  background: #f0f4f8;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.weather-card h2 {
+  margin: 0 0 8px;
+  font-size: 1.5rem;
+}
+
+.description {
+  text-transform: capitalize;
+  color: #666;
+  margin: 0 0 16px;
+}
+
+.temp-info {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.temp {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.temp-f {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #888;
+  margin: 0;
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.btn-group button {
+  padding: 10px 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.btn-group button:hover {
+  background: #e8ecf0;
+}
+
+.btn-group button.active {
+  background: #3b82f6;
+  color: #fff;
+  border-color: #3b82f6;
+}
