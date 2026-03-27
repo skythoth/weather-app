@@ -1,6 +1,13 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 
+// 앱이 실행되자마자 현재 위치 기반의 날씨가 보인다            
+// 날시 정보에는 도시, 섭씨, 화씨, 날시 정보가 보인다          
+// 5개의 버튼이 있다. (1개는 현재 날씨, 3개는 다른 도시)       
+// 도시버튼 클릭할때마다 도시별 날씨가 업데이트 된다           
+// 현재위치 버튼을 누르면 다시 현재위치 기반의 날씨가 나온다   
+// 데이터를 들고오는 동안 로딩 스피너가 돈다                
+
 // api key = b70eade5a7e3677029b379a24924df97
 const API_KEY = 'b70eade5a7e3677029b379a24924df97'
 const cities = ['Seoul', 'Tokyo', 'New York', 'London']
