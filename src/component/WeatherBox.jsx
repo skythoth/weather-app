@@ -4,6 +4,11 @@ const WeatherBox = ({ weather }) => {
     return (
         <div className="weather-card">
             <h2>{weather?.name}</h2>
+            <img
+                className="weather-icon"
+                src={`https://openweathermap.org/img/wn/${weather?.weather[0].icon}@4x.png`}
+                alt={weather?.weather[0].description}
+            />
             <p className="description">{weather?.weather[0].description}</p>
             <div className="temp-info">
                 <p className="temp">{Math.round(weather?.main.temp)}°C</p>

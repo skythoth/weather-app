@@ -1,3 +1,5 @@
-html {
-  background: #fdfdfd
+html,
+body {
+  margin: 0;
+  padding: 0;
 }

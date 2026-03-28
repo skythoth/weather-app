@@ -81,8 +81,20 @@ function App() {
   //   }
   // }, [currentCity])
 
+  // 날씨 상태에 따른 배경 클래스
+  const getWeatherBg = () => {
+    if (!weather) return ''
+    const main = weather.weather[0].main.toLowerCase()
+    if (main.includes('clear')) return 'bg-clear'
+    if (main.includes('cloud')) return 'bg-clouds'
+    if (main.includes('rain') || main.includes('drizzle')) return 'bg-rain'
+    if (main.includes('snow')) return 'bg-snow'
+    if (main.includes('thunder')) return 'bg-thunder'
+    return 'bg-default'
+  }
+
   return (
-    <div className="container">
+    <div className={`container ${getWeatherBg()}`}>
       <h1>Weather App</h1>
 
       {loading ? (
