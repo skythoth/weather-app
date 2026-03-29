@@ -1,6 +1,8 @@
 import React from 'react'
 
 const WeatherBox = ({ weather }) => {
+    if (!weather) return null //NaN 방지
+
     return (
         <div className="weather-card">
             <h2>{weather?.name}</h2>
